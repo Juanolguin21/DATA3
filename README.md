@@ -40,63 +40,7 @@ Debido a que este proyecto se realizó en Google Colab, te proporciono dos opcio
 git clone <URL_del_repositorio>
 
 
-¡Perfecto! Aquí tienes una versión del README.md adaptada para reflejar que el proyecto se realizó en Google Colab y que está destinado a ser alojado en GitHub:
-
-markdown
-Copy
-# Análisis de Sentimientos de Tweets de Elon Musk con NLP y Redes Neuronales (Google Colab)
-
-Este proyecto realiza un análisis de sentimientos de los tweets de Elon Musk, utilizando técnicas de Procesamiento del Lenguaje Natural (NLP) y Redes Neuronales (específicamente, un modelo LSTM). El objetivo es comprender mejor las tendencias de sentimiento expresadas en sus tweets y explorar las relaciones entre estas tendencias y otros factores, como el número de seguidores y la fuente de los tweets.
-
-**Importante:** Este proyecto se ha desarrollado utilizando Google Colaboratory (Colab) para su ejecución y experimentación, aunque los scripts se han diseñado para ser compatibles con entornos Python estándar.
-
-## Resumen
-
-El proyecto se divide en las siguientes etapas:
-
-1.  **Obtención de Datos:** Se descarga un conjunto de datos de tweets de Elon Musk desde un archivo CSV.
-2.  **Preprocesamiento de Datos:** Se realiza limpieza y preparación de los datos de texto, incluyendo eliminación de URLs, menciones, caracteres especiales y palabras vacías (stopwords), además de aplicar lematización para reducir las palabras a su forma base.
-3.  **Análisis de Sentimientos:** Se utiliza VADER (Valence Aware Dictionary and sEntiment Reasoner) para clasificar el sentimiento de cada tweet como positivo, negativo o neutro.
-4.  **Análisis Exploratorio de Datos (EDA):** Se generan visualizaciones gráficas para explorar y entender las tendencias de sentimiento y su relación con otros factores.
-5.  **Modelado con Redes Neuronales:** Se construye y entrena una red neuronal LSTM para clasificar el sentimiento de los tweets, ofreciendo una alternativa al enfoque basado en léxico.
-
-## Estructura del Proyecto
-.
-├── README.md             # Este archivo
-├── data/                 # Directorio para almacenar el conjunto de datos
-│   └── tweets_elon_musk.csv
-├── scripts/              # Directorio para scripts de Python
-│   └── sentiment_analysis.py  # Script principal para el análisis de sentimientos
-│   └── helper_functions.py # Funciones auxiliares para limpiar y procesar el texto
-├── images/               # Directorio para almacenar las imágenes generadas
-│   └── sentimiento_promedio_positivo.png
-│   └── distribucion_sentimientos.png
-└── requirements.txt      # Lista de dependencias de Python
-
-text
-Copy
-
-## Instrucciones de Ejecución
-
-Debido a que este proyecto se realizó en Google Colab, te proporciono dos opciones para ejecutarlo:
-
-**Opción 1: Ejecución en Google Colab:**
-
-1.  Abre el archivo `sentiment_analysis.ipynb` (si lo tienes como un notebook) en Google Colab.  Si solo tienes los scripts, puedes crear un nuevo notebook y copiar y pegar el código en las celdas.
-2.  Sube el conjunto de datos CSV (`tweets_elon_musk.csv`) a tu espacio de trabajo en Colab.
-3.  Asegúrate de que la ruta al archivo en tu script `sentiment_analysis.py` sea correcta (por ejemplo, `"./data/tweets_elon_musk.csv"`).
-4.  Ejecuta las celdas del notebook en orden.
-
-**Opción 2: Ejecución Local:**
-
-1.  Asegúrate de tener Python instalado en tu sistema.
-2.  Clona este repositorio a tu máquina local:
-
-```bash
-git clone <URL_del_repositorio>
-
-
-**Dependencias**
+## Dependencias
 
 pandas
 nltk
@@ -121,7 +65,7 @@ Resultados
 
 6.Historial de entrenamiento del modelo: muestra la precisión del modelo durante su entrenamiento.
 
-Observaciones y Limitaciones
+**Observaciones y Limitaciones**
 
 El análisis de sentimientos se basa en VADER, que aunque es útil, puede no capturar la sutileza del lenguaje humano (sarcasmo, ironía, etc.).
 El modelo LSTM se ha simplificado para facilitar la demostración. Se pueden obtener mejores resultados con modelos más complejos y mayor ajuste de hiperparámetros.
