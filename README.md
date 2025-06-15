@@ -15,9 +15,13 @@ El proyecto se divide en las siguientes etapas:
 ## Estructura del Proyecto
 
 ├── README.md             # Este archivo
+
 ├──   # Directorio para almacenar el conjunto de datos
+
 │   └── tweets_elon_musk.csv
+
 ├──   # Directorio para scripts de Python
+
 │   └── Olguin_Juan_Manuel_Data3_Proyecto.ipynb  # Script principal para el análisis de sentimientos
 
 ## Instrucciones de Ejecución
@@ -51,7 +55,7 @@ seaborn
 vaderSentiment
 Resultados
 
-**El proyecto genera los siguientes resultados, que se guardan en el directorio images/:**
+## El proyecto genera los siguientes resultados, que se guardan en el directorio images/:
 
 1.Distribución de sentimientos: Un gráfico de barras que muestra la distribución de sentimientos (positivo, negativo, neutro) en el conjunto de datos.
 
@@ -65,7 +69,7 @@ Resultados
 
 6.Historial de entrenamiento del modelo: muestra la precisión del modelo durante su entrenamiento.
 
-**Observaciones y Limitaciones**
+## Observaciones y Limitaciones 
 
 El análisis de sentimientos se basa en VADER, que aunque es útil, puede no capturar la sutileza del lenguaje humano (sarcasmo, ironía, etc.).
 El modelo LSTM se ha simplificado para facilitar la demostración. Se pueden obtener mejores resultados con modelos más complejos y mayor ajuste de hiperparámetros.
